@@ -1,1 +1,0 @@
-"use strict";$(".navbar .install-btn").click(function(){return window.open("https://chrome.google.com/webstore/detail/markdown/ofbhbpkdidmmopdmdamilkhhehmeianc","_blank")}),$(document).ready(function(){switch(window.location.pathname){case"/stores":$(".navbar .stores-link").addClass("active");}});
