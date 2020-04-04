@@ -1,132 +1,112 @@
-#content
-  min-height calc(100% - 135px)
-  .header
-    height 600px
+.search-bar
+  width 90%
+  margin 30px auto 0
+  position relative
+  .search-icon
+    background-image url('https://markdown-images-369543.s3-us-west-2.amazonaws.com/search-icon.svg')
+    background-size cover
+    background-position center
+    background-repeat no-repeat
+    width 40px
+    height 40px
+    position absolute
+    top calc(50% + 2px)
+    opacity .2
+    transform translateY(-50%)
+    left 5px
+  .clear-search
+    position absolute
+    background url('https://markdown-images-369543.s3-us-west-2.amazonaws.com/close.svg')
+    background-size cover
+    background-repeat no-repeat
+    background-position center
+    width 35px
+    height 35px
+    top 50%
+    transform translateY(-50%)
+    right 10px
+    opacity .2
+    display none
+    cursor pointer
+    transition opacity .3s
+    &:hover
+      opacity .4
+  .search-inpt
+    border none
+    outline none
+    background none
     width 100%
-    background linear-gradient(#232a38,#1e232e)
-    box-shadow 0 0 12px 3px rgba(0,0,0,0.3)
-    position relative
-    h1.title
-      color white
-      position absolute
-      top 50%
-      letter-spacing .5px
-      font-size 5em
-      width fit-content
-      text-align center
-      margin 0
-      left 50%
-      transform translate(-50%,-50%)
-
-  .search-bar
-    width 90%
-    margin 30px auto 0
-    position relative
-    .search-icon
-      background-image url('https://markdown-images-369543.s3-us-west-2.amazonaws.com/search-icon.svg')
-      background-size cover
-      background-position center
-      background-repeat no-repeat
-      width 40px
-      height 40px
-      position absolute
-      top calc(50% + 2px)
-      opacity .2
-      transform translateY(-50%)
-      left 5px
-    .clear-search
-      position absolute
-      background url('https://markdown-images-369543.s3-us-west-2.amazonaws.com/close.svg')
-      background-size cover
-      background-repeat no-repeat
-      background-position center
-      width 35px
-      height 35px
-      top 50%
-      transform translateY(-50%)
-      right 10px
-      opacity .2
-      display none
-      cursor pointer
-      transition opacity .3s
-      &:hover
-        opacity .4
-    .search-inpt
-      border none
-      outline none
-      background none
-      width 100%
-      padding 10px 50px 3px 60px
-      border-bottom 2px solid rgb(224, 227, 238)
-      color #757575
-      font-weight bold
-      display inline
-      marign 0 auto
-      font-size 45px
+    padding 10px 50px 3px 60px
+    border-bottom 2px solid rgb(224, 227, 238)
+    color #757575
+    font-weight bold
+    display inline
+    marign 0 auto
+    font-size 45px
+    letter-spacing 1px
+    &::placeholder
+      color rgb(191, 191, 191)
+      font-weight 400
       letter-spacing 1px
-      &::placeholder
-        color rgb(191, 191, 191)
-        font-weight 400
-        letter-spacing 1px
-        font-size 35px
-        padding-left 3px
+      font-size 35px
+      padding-left 3px
 
-  .stores-container
-    width 1546px
-    margin 40px auto 0
-    display flex
-    height fit-content
-    justify-content left
-    align-items center
-    flex-flow row wrap
-    .no-results-container
-      margin 30px auto
-      width fit-content
-      text-align center
-      display none
-      h2
-        color #333
-        font-size 20px
-        margin 0 0 5px
-        span
-          font-weight 400
-      p
-        color #595959
-        font-size 14px
-        margin 0
-    .store
-      width calc(33% - 20px)
-      height 200px
-      margin 0 10px 20px
-      border-radius .3em
-      border 1px solid rgb(231, 231, 237)
-      box-shadow none
-      cursor pointer
-      transition box-shadow .3s, border-color .3s
-      &:hover
-        border-color rgba(0, 193, 108, 0.3)
-        box-shadow 0 3px 12px 3px rgba(0, 193, 108, 0.12)
-      .content
-        width 95%
-        height 95%
-        margin 2.5% 0 0 2.5%
-        display flex
-        align-items center
-        justify-content left
-        .logo
-          width 75px
-          margin-right 35px
-          margin-left 15px
-        .info
-          width fit-content
-          h1.title
-            color #333
-            margin 0 0 2px
-            font-size 20px
-          p.desc
-            color grey
-            margin 0
-            font-size 13px
+.stores-container
+  width 1546px
+  margin 40px auto 0
+  display flex
+  height fit-content
+  justify-content left
+  align-items center
+  flex-flow row wrap
+  .no-results-container
+    margin 30px auto
+    width fit-content
+    text-align center
+    display none
+    h2
+      color #333
+      font-size 20px
+      margin 0 0 5px
+      span
+        font-weight 400
+    p
+      color #595959
+      font-size 14px
+      margin 0
+  .store
+    width calc(33% - 20px)
+    height 200px
+    margin 0 10px 20px
+    border-radius .3em
+    border 1px solid rgb(231, 231, 237)
+    box-shadow none
+    cursor pointer
+    transition box-shadow .3s, border-color .3s
+    &:hover
+      border-color rgba(0, 193, 108, 0.3)
+      box-shadow 0 3px 12px 3px rgba(0, 193, 108, 0.12)
+    .content
+      width 95%
+      height 95%
+      margin 2.5% 0 0 2.5%
+      display flex
+      align-items center
+      justify-content left
+      .logo
+        width 75px
+        margin-right 35px
+        margin-left 15px
+      .info
+        width fit-content
+        h1.title
+          color #333
+          margin 0 0 2px
+          font-size 20px
+        p.desc
+          color grey
+          margin 0
+          font-size 13px
 
 @media only screen and (max-width 1600px)
   .stores-container

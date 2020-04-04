@@ -1,14 +1,17 @@
 link(rel="stylesheet" href="/css/nav.css")
-.navbar.active
+.navbar
   .nav-content
-    .logo
-    .nav-links
-      .link.home-link
-        p Home
-      .link.about-link
-        p About
-      .link.stores-link
-        p Stores
-      .link.support-link
-        p Support
-      button.install-btn Get Markdown
+    .left
+      .logo-wrap
+        .logo
+        h1.title Markdown
+      .divider
+      .nav-links
+        a.link.stores-link(href="/stores") Stores
+        a.link.support-link(href="/support") Support
+    .right
+      .install-btn
+        p.btn-text Install Markdown
+        .icon-wrap
+          .icon
+script(src="/js/nav.js")

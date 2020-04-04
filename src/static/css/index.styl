@@ -1,0 +1,397 @@
+body
+  background #FCFDFF !important
+
+.header
+  width 100%
+  height 100%
+  .header-content
+    width fit-content
+    padding-top 70px
+    margin 0 auto
+    .fadeIn
+      opacity 1 !important
+      transform none !important
+      visibility visible !important
+    .start-hidden
+      opacity 0
+      visibility hidden
+      transition opacity .5s, transform .5s !important
+    .triangle
+      width calc(1431px/1.1)
+      height calc(1027px/1.1)
+      position absolute
+      left calc(50% + 75px)
+      z-index -1
+      transform translateX(-50%) translateY(-20px)
+      top -220px
+      background-size cover
+      background-position center
+      background-repeat no-repeat
+      &.fadeIn
+        transform translateX(-50%) !important
+    .slogan
+      color #183149
+      text-align center
+      margin 0
+      transform translateY(-20px)
+      line-height 110%
+      font-size 55px
+      letter-spacing .5px
+    .advert
+      margin 20px auto 0
+      width fit-content
+      .advert-text
+        color #567B99
+        font-size 19px
+        letter-spacing .3px
+        margin 0
+        transform translateY(-20px)
+      .advert-link-wrap
+        display flex
+        cursor pointer
+        transform translateY(-20px)
+        width fit-content
+        align-items center
+        margin 30px auto 0
+        transition transform .3s
+        &:hover
+          transform scale(1.05) !important
+        p
+          color #0E9EE4
+          font-size 17px
+          margin 0 6px 0 0
+        .icon
+          background-image url("https://markdown-images-369543.s3-us-west-2.amazonaws.com/markdown-lander-assets/blue-download-arrow.png")
+          background-size cover
+          background-position center
+          background-repeat no-repeat
+          width 16px
+          transform none
+          height 16px
+    .web-page-demo
+      width 1000px
+      margin-top 40px
+      transform translateY(-20px)
+
+.page-content
+  width 100%
+  height fit-content
+  padding 150px 0
+  .newest-changes
+    width 100%
+    .title
+      color #333
+      font-weight 600
+      font-size 27.5px
+      letter-spacing .3px
+      text-align center
+    .updates-container
+      width 1240px
+      margin 20px auto 0
+      display flex
+      justify-content space-between
+    .update-card
+      width 600px
+      height 110px
+      background white
+      border-radius .3em
+      box-shadow 0 3px 8px 0 rgba(0,0,0,0.08)
+      .card-content
+        height 100%
+        display flex
+        width calc(100% - 40px)
+        margin 0 auto
+        justify-content left
+        align-items center
+        .icon-container
+          background #00acff
+          width 60px
+          box-shadow 0 3px 8px 0 rgba(0,0,0,0.1)
+          height 60px
+          border-radius 100%
+          position relative
+          margin-right 30px
+          .icon
+            background-position center
+            background-size cover
+            background-repeat no-repeat
+            position absolute
+            top 50%
+            left 50%
+            transform translate(-50%, -50%)
+            width 30px
+            height 30px
+        .message
+          font-weight 400
+          font-size 16px
+          color #2f5478
+          margin 0
+          letter-spacing .3px
+          line-height 120%
+  .choose-us-container
+    display flex
+    justify-content center
+    width 95%
+    aligm-items center
+    position relative
+    margin-top 150px
+    .left
+      width fit-content
+      margin-right 20px
+      position relative
+      z-index 2
+      .title
+        color #333
+        font-weight 600
+        font-size 25px
+        letter-spacing .3px
+        text-align left
+        margin 0 0 20px 30px
+      .container-wrap
+        display flex
+        width fit-content
+        justify-content center
+        align-items center
+        margin 0 auto
+        .square
+          width 300px
+          height 450px
+          background #0E9EE4
+          opacity .05
+          z-index -1
+          border-radius .5em
+          margin 20px 0 0 -50px
+          box-shadow 0 2px 6px 0 rgba(0,0,0,0.07)
+        .quick-notifications-container
+          left 620px
+          transform translateY(-50%)
+          top calc(50% + 40px)
+          height 75px
+          width 400px
+          padding 8px
+          position absolute
+          z-index 5
+          .notification-container
+            width 400px
+            height 75px
+            border-radius .3em
+            position absolute
+            background white
+            box-shadow 0 2px 8px 0 rgba(0,0,0,0.08)
+            visibility hidden
+            opacity 0
+            transition opacity .5s, visibility .5s
+            &.active
+              opacity 1
+              visibility visible
+            .notification-content
+              display flex
+              justify-content left
+              width 90%
+              margin 0 auto
+              align-items center
+              height 100%
+              .logo
+                background-image url("https://markdown-images-369543.s3-us-west-2.amazonaws.com/Logo/PNG/markdown-02.png")
+                background-size cover
+                background-position center
+                background-repeat no-repeat
+                width 35px
+                height 35px
+                margin-right 25px
+              .message
+                margin 3px 0 0
+                font-size 14px
+                width calc(100% - 60px)
+                letter-spacing .3px
+                color #234464
+        .accordian
+          width 600px
+          height 400px
+          background white
+          position relative
+          border-radius .3em
+          box-shadow 0 3px 8px 0 rgba(0,0,0,0.1)
+          margin 20px auto 0
+          z-index 2
+          .divider
+            width 80%
+            height 1px
+            margin 0 auto
+            background rgb(236, 242, 252)
+          .slide
+            padding 30px
+            height 30px
+            width 80%
+            margin 0 auto
+            overflow hidden
+            cursor pointer
+            transition height .3s
+            &.active
+              height 158px
+              .top
+                .icon
+                  transform rotate(90deg)
+            &.active,
+            &:hover
+              .top
+                .slide-title
+                  color rgb(24, 40, 74)
+                .icon
+                  opacity 1
+            .top
+              display flex
+              justify-content space-between
+              align-items center
+              .slide-title
+                color rgb(148, 160, 185)
+                font-size 20px
+                margin 0
+                letter-spacing .3px
+                font-weight 500
+                transition color .3s
+              .icon
+                background-image url("https://markdown-images-369543.s3-us-west-2.amazonaws.com/markdown-lander-assets/dark-blue-right-arrow.svg")
+                background-size cover
+                background-position center
+                background-repeat no-repeat
+                width 20px
+                height 20px
+                opacity .3
+                transition opacity .3s, transform .3s
+            .content
+              margin-top 28px
+              p
+                margin 0
+                color rgb(148, 160, 185)
+                font-size 14px
+                letter-spacing .5px
+
+  .vast-stores-container
+    width 100%
+    margin-top 150px
+    .title
+      color #333
+      font-weight 600
+      font-size 27.5px
+      letter-spacing .3px
+      text-align center
+      margin 0
+    .link-wrap
+      display flex
+      width fit-content
+      margin 10px auto
+      align-items center
+      justify-content center
+      .link-info
+        color #567B99
+        font-size 15px
+        letter-spacing .3px
+        margin 0 15px 0 0
+      .link
+        display flex
+        cursor pointer
+        align-items center
+        transition transform .3s
+        &:hover
+          p
+            margin 0 15px 0 0
+          .icon
+            margin-right 0
+        p
+          color #0E9EE4
+          font-size 15px
+          margin 0 7px 0 0
+          transition margin .3s
+        .icon
+          background-image url("https://markdown-images-369543.s3-us-west-2.amazonaws.com/markdown-lander-assets/blue-download-arrow.png")
+          background-size cover
+          background-position center
+          background-repeat no-repeat
+          width 14px
+          transform rotate(-90deg)
+          height 14px
+          margin-right 8px
+          transition margin-right .3s
+    .stores-slide-wrap
+      width 95%
+      height 100px
+      margin 60px auto 0
+      position relative
+      overflow hidden
+      .fade-left,
+      .fade-right
+        height 100%
+        width 200px
+        position absolute
+        z-index 5
+      .slide
+        width 1000px
+        height 100%
+        background #FCFDFF
+        display flex
+        justify-content left
+        align-items center
+        position absolute
+        .store-logo
+          width 75px
+          filter grayscale(1)
+          margin-left 300px
+      .fade-left
+        background linear-gradient(90deg, #FCFDFF, rgba(0,0,0,0))
+        top 0
+        left 0
+      .fade-right
+        top 0
+        right 0
+        background linear-gradient(90deg, rgba(0,0,0,0), #FCFDFF)
+  .process-container
+    margin-top 150px
+    .title
+      color #333
+      font-weight 600
+      font-size 27.5px
+      letter-spacing .3px
+      text-align center
+      margin 0
+    .subtitle
+      color #567B99
+      font-size 15px
+      letter-spacing .3px
+      margin 15px auto 0
+      text-align center
+      width 650px
+    .all-steps-container
+      display flex
+      justify-content center
+      margin-top 50px
+      .step-container
+        margin 0 20px 40px
+        text-align center
+        width 400px
+        .list-wrap
+          height 40px
+          width 40px
+          position relative
+          border 3px solid #0e9ee4
+          margin 0 auto
+          p
+            position absolute
+            color #0e9ee4
+            font-size 20px
+            font-weight 700
+            margin 0
+            top calc(50% + 1px)
+            left 50%
+            transform translate(-50%, -50%)
+        .title
+          color #183149
+          font-weight 600
+          font-size 22px
+          letter-spacing .3px
+          margin 20px 0 0
+        .message
+          color #567B99
+          font-size 13px
+          letter-spacing .3px
+          margin 15px 0 0

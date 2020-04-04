@@ -1,0 +1,110 @@
+html
+	head
+		title Supported Stores
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		script(src="/js/main.js")
+		link(rel="stylesheet" href="/css/main.css")
+		link(rel="stylesheet" href="/css/index.css")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+	body
+		main
+			.header
+				include components/nav
+				.header-content
+					.triangle.start-hidden
+						embed(type="image/svg+xml" src="https://markdown-images-369543.s3-us-west-2.amazonaws.com/markdown-lander-assets/triangle.svg")
+					h1.slogan.start-hidden Enhancing Your <br> Retail Shopping Experience
+					.advert
+						p.advert-text.start-hidden Cheaper, better, and similar clothes from all your favorite stores on the go!
+						.advert-link-wrap.start-hidden
+							p Install our chrome extension
+							.icon
+					img.web-page-demo.start-hidden(src="https://markdown-images-369543.s3-us-west-2.amazonaws.com/markdown-lander-assets/header-web-display.png")
+			.page-content
+				.newest-changes
+					h2.title Latest Updates
+					.updates-container
+						.update-card
+							.card-content
+								.icon-container
+									.icon(style="background-image: url(https://markdown-images-369543.s3-us-west-2.amazonaws.com/markdown-lander-assets/store-icon.svg)")
+								p.message Updated a few stores on Markdown.
+						.update-card
+							.card-content
+								.icon-container
+									.icon(style="background-image: url(https://markdown-images-369543.s3-us-west-2.amazonaws.com/markdown-lander-assets/launch-icon.svg)")
+								p.message Markdown officially released.
+				.choose-us-container
+					.left
+						h2.title A Different Shopping Experience
+						.container-wrap
+							.accordian
+								.slide.slide1.active
+									.top
+										h2.slide-title Quick notifications
+										.icon
+									.content
+										p Recieve real-time notifications while shopping for clothes online. Markdown will nofity you if it found any great deals so you never miss out on a great opportunity!
+								.divider
+								.slide.slide2
+									.top
+										h2.slide-title Find similar clothing
+										.icon
+									.content
+										p While shopping for clothes online, Markdown will match the clothing you are viewing with similar clothes from other stores.
+								.divider
+								.slide.slide3
+									.top
+										h2.slide-title Keep your favorites
+										.icon
+									.content
+										p See any clothes in our chrome extension that you like? Markdown allows you to favorite items so you can come back to them later.
+							.square
+							.quick-notifications-container
+								.notification-container(style="top: -100px")
+									.notification-content
+										.logo
+										p.message 
+								.notification-container.active(style="top: 0")
+									.notification-content
+										.logo
+										p.message Finding similar products...
+							
+				.vast-stores-container
+					h1.title A Vast Amount of Stores
+					.link-wrap
+						p.link-info Want to see if we support a specific store? 
+						.link
+							p See supported stores
+							.icon
+					.stores-slide-wrap
+						.fade-left
+						.slide.slide1
+						.slide.slide2
+						.fade-right
+				.process-container
+					h1.title A Simple Process
+					p.subtitle Markdown is an easy-to-use chrome extension, which allows for a streamlined shopping experience.
+					.all-steps-container
+						.step-container
+							.list-wrap
+								p 1
+							h1.title Install Markdown
+							p.message First, install Markdown from the chrome web store.
+						.step-container
+							.list-wrap
+								p 2
+							h1.title Go Shopping
+							p.message Go to any of your favorite online clothing stores.
+						.step-container
+							.list-wrap
+								p 3
+							h1.title Get Similar Clothing
+							p.message If the store is supported by Markdown, you will recieve clothing related to what you're looking at.
+						.step-container
+							.list-wrap
+								p 4
+							h1.title Continue Shopping
+							p.message Favorite or buy anything you like and continue shopping. It's that easy!
+			include components/footer
+		script(src="/js/index.js")
