@@ -6,10 +6,10 @@ var logger = require('morgan');
 var session = require('express-session')
 var bodyParser = require('body-parser')
 
-const port = 3000
+
 
 var indexRouter = require('./routes/index');
-
+const port = process.env.PORT || 3000
 var app = express();
 
 
@@ -22,16 +22,6 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '..', 'bin')));
-
-app.use(session({
-  secret: 'secretkey',
-  resave: true,
-  saveUninitialized: false,
-  cooke: {
-    httpOnly: false,
-    maxAge: null
-  }
-}))
 
 app.use('/', indexRouter);
 
