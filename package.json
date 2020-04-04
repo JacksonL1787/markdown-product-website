@@ -2,10 +2,10 @@
   "name": "markdown-lander",
   "version": "1.0.0",
   "description": "",
-  "main": "gulpfile.js",
+  "main": "./src/app.js",
   "scripts": {
     "watchDev": "NODE_ENV=development gulp static && gulp watch",
-    "watch": "gulp static && gulp watch"
+    "start": "gulp static && gulp watch"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
