@@ -1,3 +1,40 @@
+.header
+  height 600px
+  background #041026
+  width 100%
+  position relative
+  margin-top -100px
+  .header-content
+    position absolute
+    top calc(50% + 5px)
+    left 50%
+    transform translate(-50%, -50%)
+    text-align center
+    h1.title
+      color white
+      font-size 65px
+      margin 0
+      letter-spacing 1px
+    p.subtitle
+      color #8ca3b6
+      margin 0
+      font-size 17px
+      letter-spacing .3px
+    button.request-store-btn
+      margin 15px 0 0
+      color white
+      background #0a2c52
+      padding 12px 50px
+      font-size 14px
+      letter-spacing .5px
+      font-weight 500
+      outline none
+      border none
+      cursor pointer
+      border-radius .5em
+      transition background .3s
+      &:hover
+        background #2c9fe0
 .search-bar
   width 90%
   margin 30px auto 0
@@ -37,16 +74,15 @@
     background none
     width 100%
     padding 10px 50px 3px 60px
-    border-bottom 2px solid rgb(224, 227, 238)
-    color #757575
+    border-bottom 2px solid rgb(228, 231, 242)
+    color #7185a1
     font-weight bold
     display inline
-    marign 0 auto
     font-size 45px
     letter-spacing 1px
     &::placeholder
-      color rgb(191, 191, 191)
-      font-weight 400
+      color rgb(185, 187, 199)
+      font-weight 300
       letter-spacing 1px
       font-size 35px
       padding-left 3px
@@ -65,27 +101,29 @@
     text-align center
     display none
     h2
-      color #333
+      color #183149
       font-size 20px
       margin 0 0 5px
+      letter-spacing .3px
       span
         font-weight 400
     p
-      color #595959
+      color #567B99
       font-size 14px
+      letter-spacing .3px
       margin 0
   .store
     width calc(33% - 20px)
     height 200px
     margin 0 10px 20px
     border-radius .3em
-    border 1px solid rgb(231, 231, 237)
+    border 1px solid #efeff3
     box-shadow none
     cursor pointer
     transition box-shadow .3s, border-color .3s
     &:hover
-      border-color rgba(0, 193, 108, 0.3)
-      box-shadow 0 3px 12px 3px rgba(0, 193, 108, 0.12)
+      border-color rgba(0, 158, 193, 0.3)
+      box-shadow 0 3px 12px 3px rgba(0, 135, 193, 0.12)
     .content
       width 95%
       height 95%
@@ -100,11 +138,13 @@
       .info
         width fit-content
         h1.title
-          color #333
+          color #132639
           margin 0 0 2px
           font-size 20px
+          letter-spacing .5px
         p.desc
-          color grey
+          color #567B99
+          letter-spacing .3px
           margin 0
           font-size 13px
 

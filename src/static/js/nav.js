@@ -14,8 +14,8 @@ $(document).ready(() => {
     case "/stores":
       $(".navbar .stores-link").addClass("active")
       break;
-    case "/about":
-      $(".navbar .about-link").addClass("active")
+    case "/support":
+      $(".navbar .support-link").addClass("active")
       break;
   }
 })

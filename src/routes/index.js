@@ -11,8 +11,8 @@ router.get('/stores', function(req, res, next) {
   res.render('stores')
 });
 
-router.get('/about', function(req, res, next) {
-  res.render('about')
+router.get('/support', function(req, res, next) {
+  res.render('support')
 });
 
 module.exports = router;

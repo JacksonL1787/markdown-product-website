@@ -1,6 +1,8 @@
 .navbar
   width 100%
   height 100px
+  position relative
+  z-index 5
   .nav-content
     width calc(100% - 80px)
     margin 0 auto
@@ -45,12 +47,13 @@
           font-weight 400
           text-decoration none
           transition color .3s
-          &:hover
-            color #0F8DCB
+          &:hover,
+          &.active
+            color #0E9EE4
     .right
       .install-btn
         width 180px
-        height 40px
+        height 45px
         position relative
         border-radius .3em
         background #0E9EE4
@@ -58,36 +61,14 @@
         transition background .3s
         &:hover
           background #11aaf5
-          .icon-wrap
-            background #0E9EE4
         .btn-text
           color white
-          font-weight 400
+          font-weight 500
           font-size 14px
           position absolute
-          top 50%
-          letter-spacing .3px
-          left 10px
+          top calc(50% + 1px)
+          letter-spacing .5px
+          left 50%
           margin 0
-          transform translateY(-50%)
-        .icon-wrap
-          position absolute
-          top 0
-          right 0
-          width 40px
-          height 40px
-          border-bottom-right-radius .3em
-          border-top-right-radius .3em
-          background #0E8DCB
-          transition background .3s
-          .icon
-            background-image url("https://markdown-images-369543.s3-us-west-2.amazonaws.com/markdown-lander-assets/white-download-arrow.png")
-            background-size cover
-            background-position center
-            background-repeat no-repeat
-            height 17px
-            width 17px
-            position absolute
-            top 50%
-            left 50%
-            transform translate(-50%, -50%)
+          width fit-content
+          transform translate(-50%, -50%)
