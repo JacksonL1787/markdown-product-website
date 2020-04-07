@@ -52,7 +52,7 @@
   {
     "name": "Nike",
     "url": "www.nike.com",
-    "desc": "An American multinational corporation that is engaged in the design, development, manufacturing, and worldwide marketing and sales of footwear, apparel, equipment, accessories, and services.",
+    "desc": "An American multinational corporation that is engaged in the design and sales of apparel.",
     "icon": {
       "imgSrc": "nike.com",
       "imgProv": "clearbit",
@@ -84,7 +84,7 @@
   {
     "name": "Urban Outfitters",
     "url": "www.urbanoutfitters.com",
-    "desc": "A multinational lifestyle retail brand that targets young adults with a merchandise mix of women's and men's fashion apparel, footwear, beauty and wellness products, accessories, active-wear and gear, and housewares, as well as music, primarily vinyl records and cassettes.",
+    "desc": "A multinational lifestyle retail brand that targets young adults with a merchandise mix of women's and men's fashion apparel.",
     "icon": {
       "imgSrc": "urbanoutfitters.com",
       "imgProv": "clearbit",
@@ -164,7 +164,7 @@
   {
     "name": "J.Crew",
     "url": "www.jcrew.com",
-    "desc": "An American multi-brand, multi-channel, specialty retailer that offers an assortment of women's, men's, and children's apparel and accessories, including swimwear, outerwear, lounge-wear, bags, sweaters, denim, dresses, suiting, jewelry, and shoes.",
+    "desc": "An American multi-brand, multi-channel, specialty retailer that offers an assortment of women's, men's, and children's apparel.",
     "icon": {
       "imgSrc": "jcrew.com",
       "imgProv": "clearbit",

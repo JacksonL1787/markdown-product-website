@@ -8,6 +8,7 @@ body
     width fit-content
     padding-top 70px
     margin 0 auto
+    text-align center
     .fadeIn
       opacity 1 !important
       transform none !important
@@ -18,7 +19,6 @@ body
       transition opacity .5s, transform .5s !important
     .triangle
       width calc(1431px/1.1)
-      height calc(1027px/1.1)
       position absolute
       left calc(50% + 75px)
       z-index -1
@@ -27,6 +27,7 @@ body
       background-size cover
       background-position center
       background-repeat no-repeat
+      display none
       &.fadeIn
         transform translateX(-50%) !important
     .slogan
@@ -69,14 +70,15 @@ body
           transform none
           height 16px
     .web-page-demo
-      width 1000px
       margin-top 40px
+      width 95vw
+      max-width 1000px
       transform translateY(-20px)
 
 .page-content
   width 100%
   height fit-content
-  padding 150px 0
+  padding 100px 0 150px
   .newest-changes
     width 100%
     .title
@@ -106,6 +108,7 @@ body
         .icon-container
           background #00acff
           width 60px
+          min-width 60px
           box-shadow 0 3px 8px 0 rgba(0,0,0,0.1)
           height 60px
           border-radius 100%
@@ -132,9 +135,9 @@ body
     display flex
     justify-content center
     width 95%
-    aligm-items center
+    align-items center
     position relative
-    margin-top 150px
+    margin 150px auto 0
     .left
       width fit-content
       margin-right 20px
@@ -146,7 +149,7 @@ body
         font-size 25px
         letter-spacing .3px
         text-align left
-        margin 0 0 20px 30px
+        margin 0 0 10px 30px
       .container-wrap
         display flex
         width fit-content
@@ -163,7 +166,7 @@ body
           margin 20px 0 0 -50px
           box-shadow 0 2px 6px 0 rgba(0,0,0,0.07)
         .quick-notifications-container
-          left 620px
+          right -120px
           transform translateY(-50%)
           top calc(50% + 40px)
           height 75px
@@ -206,7 +209,8 @@ body
                 letter-spacing .3px
                 color #234464
         .accordian
-          width 600px
+          max-width 600px
+          width 50vw
           height 400px
           background white
           position relative
@@ -364,7 +368,7 @@ body
     .all-steps-container
       display flex
       justify-content center
-      margin-top 50px
+      margin 50px auto 0
       .step-container
         margin 0 20px 40px
         text-align center
@@ -394,4 +398,129 @@ body
           color #567B99
           font-size 13px
           letter-spacing .3px
-          margin 15px 0 0
+          margin 15px auto 0
+
+@media only screen and (max-width 1360px)
+  .newest-changes
+    .updates-container
+      justify-content center !important
+      width 600px !important
+      flex-flow wrap column !important
+      .update-card
+        margin 10px 0 !important
+
+@media only screen and (max-width 1275px)
+  .process-container
+    .all-steps-container
+      width 880px !important
+      flex-flow row wrap !important
+
+@media only screen and (max-width 950px)
+  .page-content
+    padding 50px 0 !important
+  .choose-us-container
+    .left
+      margin 0 !important
+      .title
+        text-align center !important
+        margin 0 0 10px 0 !important
+      .container-wrap
+        flex-flow column wrap !important
+        .accordian
+          max-width none !important
+          width 90vw !important
+        .square
+          margin -50px auto 0 !important
+          height 320px !important
+          width 94vw !important
+        .quick-notifications-container
+          right auto !important
+          left 50% !important
+          transform translateX(-50%) !important
+          top auto !important
+          bottom 90px !important
+
+@media only screen and (max-width 900px)
+  .header
+    .slogan
+      font-size 6.5vw !important
+    .advert
+      .advert-text
+        font-size 16px !important
+        text-align center
+        width 95% !important
+        margin 0 auto !important
+      .advert-link-wrap
+        margin 10px auto 0 !important
+        p
+          font-size 16px !important
+        .icon
+          width 16px !important
+          height 16px !important
+  .process-container
+    .all-steps-container
+      width 680px !important
+      .step-container
+        width 300px !important
+
+@media only screen and (max-width 700px)
+  .page-content
+    padding 50px 0 !important
+  .process-container
+    .subtitle
+      width 90% !important
+    .all-steps-container
+      width 300px !important
+      .step-container
+        margin 0 0 40px !important
+  .newest-changes
+    .updates-container
+      width 90% !important
+      .update-card
+        width 100% !important
+
+@media only screen and (max-width 600px)
+  .header
+    .advert
+      .advert-text
+        font-size 15px !important
+      .advert-link-wrap
+        p
+          font-size 14px !important
+        .icon
+          width 14px !important
+          height 14px !important
+  .vast-stores-container
+    .link-wrap
+      flex-flow wrap column
+      .link-info
+        margin 0 !important
+      .link
+        margin-top 8px !important
+
+  .newest-changes
+    .updates-container
+      .update-card
+        .icon-container
+          width 45px !important
+          min-width 45px !important
+          height 45px !important
+          margin-right 15px !important
+          .icon
+            width 20px !important
+            height 20px !important
+        .message
+          font-size 14px !important
+
+@media only screen and (max-width 450px)
+  .choose-us-container
+    .accordian
+      .content
+        p
+          font-size 13px !important
+    .quick-notifications-container
+      width 80vw !important
+      min-width 300px !important
+      .notification-container
+        width 80vw !important
+        min-width 300px !important

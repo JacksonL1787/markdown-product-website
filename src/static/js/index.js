@@ -77,6 +77,10 @@ $(() => {
   })
 })
 
+$(".vast-stores-container .link-wrap .link").click(() => {
+  window.location.href="/stores"
+})
+
 $(() => {
   const runSlideStores = (width) => {
     let leftSlide1, leftSlide2;

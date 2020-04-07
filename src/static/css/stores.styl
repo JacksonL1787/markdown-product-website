@@ -10,6 +10,7 @@
     left 50%
     transform translate(-50%, -50%)
     text-align center
+    width fit-content
     h1.title
       color white
       font-size 65px
@@ -162,6 +163,22 @@
       margin 0 0 20px !important
 
 @media only screen and (max-width 770px)
+  .stores-container
+    width 95% !important
+    .store
+      .info
+        .desc
+          font-size 12px !important
+  .header
+    .title
+      font-size 50px !important
+    .subtitle
+      font-size 15px !important
+      width 95% !important
+      margin 0 auto !important
+    .request-store-btn
+      font-size 13px !important
+      padding 10px 40px !important
   .search-bar
     .search-icon
       width 35px !important
@@ -174,3 +191,10 @@
     .clear-search
       width 30px !important
       height 30px !important
+
+@media only screen and (max-width 545px)
+  .header
+    .title
+      font-size 35px !important
+    .subtitle
+      font-size 12px !important
