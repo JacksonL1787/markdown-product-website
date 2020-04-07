@@ -329,6 +329,7 @@ body
         width 200px
         position absolute
         z-index 5
+        display none
       .slide
         width 1000px
         height 100%
@@ -342,13 +343,15 @@ body
           filter grayscale(1)
           margin-left 300px
       .fade-left
-        background linear-gradient(90deg, #FCFDFF, rgba(0,0,0,0))
+        background-image linear-gradient(90deg, #FCFDFF, rgba(0,0,0,0))
+        background-image -webkit-linear-gradient(90deg, #FCFDFF, rgba(0,0,0,0))
         top 0
         left 0
       .fade-right
         top 0
         right 0
-        background linear-gradient(90deg, rgba(0,0,0,0), #FCFDFF)
+        background-image linear-gradient(90deg, rgba(0,0,0,0), #FCFDFF)
+        background-image -webkit-linear-gradient(90deg, rgba(0,0,0,0), #FCFDFF)
   .process-container
     margin-top 150px
     .title
@@ -483,13 +486,13 @@ body
   .header
     .advert
       .advert-text
-        font-size 15px !important
+        font-size 13px !important
       .advert-link-wrap
         p
-          font-size 14px !important
+          font-size 13px !important
         .icon
-          width 14px !important
-          height 14px !important
+          width 13px !important
+          height 13px !important
   .vast-stores-container
     .link-wrap
       flex-flow wrap column
