@@ -1,0 +1,65 @@
+.markdown-logo
+  background-image url("https://markdown-images-369543.s3-us-west-2.amazonaws.com/Logo/PNG/markdown-02.png")
+  background-size cover
+  background-position center
+  background-repeat no-repeat
+  width 35px
+  height 35px
+  position absolute
+  top 25px
+  left 30px
+  cursor pointer
+
+.content-container
+  position absolute
+  top calc(50% - 40px)
+  left 50%
+  transform translate(-50%, -50%)
+  width fit-content
+  text-align center
+  .checkmark
+    background-image url("../img/check-mark-black-outline.svg")
+    background-size cover
+    background-position center
+    background-repeat no-repeat
+    width 200px
+    height 200px
+    filter grayscale(1)
+    opacity .5
+    margin 0 auto
+  .title
+    color #183149
+    margin 20px 0 0
+    letter-spacing .5px
+  .subtitle
+    color #94a0b9
+    width 95%
+    max-width 700px
+    margin 10px auto 0
+    letter-spacing .4px
+    font-size 15px
+    a
+      color #0E9EE4
+      text-decoration none
+      &:hover
+        text-decoration underline
+
+@media only screen and (max-width 600px)
+  .content-container
+    .checkmark
+      width 150px !important
+      height 150px !important
+    .title
+      font-size 25px !important
+    .subtitle
+      font-size 13px !important
+
+@media only screen and (max-width 450px)
+  .content-container
+    .checkmark
+      width 125px !important
+      height 125px !important
+    .title
+      font-size 22px !important
+    .subtitle
+      font-size 12px !important

@@ -69,6 +69,10 @@ $('.search-bar .clear-search').click(function() {
   $('.search-bar .search-inpt').focus()
 })
 
+$(".header .request-store-btn").click(() => {
+  window.location.href="/request-store"
+})
+
 $(document).ready(() => {
   addStores()
 })

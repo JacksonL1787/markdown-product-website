@@ -1,0 +1,24 @@
+html
+	head
+		title Request Store
+		link(rel="icon" type="image/png" href="https://markdown-images-369543.s3-us-west-2.amazonaws.com/markdown-lander-assets/markdown-favicon.png")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		script(src="/js/main.js")
+		link(rel="stylesheet" href="/css/main.css")
+		link(rel="stylesheet" href="/css/request-store.css")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+	body
+		main
+			.markdown-logo
+			.form-container
+				h1.title Request Store
+				p.subtitle Suggest a new store for Markdown
+				.input-container
+					span.placeholder Store Name
+					input.store-input(type="text")
+				.action-container
+					a.cancel-link(href="/stores") Cancel
+					.button-container
+						embed.loader(type="image/svg+xml" src="https://markdown-images-369543.s3-us-west-2.amazonaws.com/markdown-lander-assets/white-loader.svg")
+						p.button-text Submit
+		script(src="/js/request-store.js")

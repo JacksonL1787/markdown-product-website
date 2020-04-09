@@ -1,0 +1,116 @@
+.markdown-logo
+  background-image url("https://markdown-images-369543.s3-us-west-2.amazonaws.com/Logo/PNG/markdown-02.png")
+  background-size cover
+  background-position center
+  background-repeat no-repeat
+  width 35px
+  height 35px
+  position absolute
+  top 25px
+  left 30px
+  cursor pointer
+
+.form-container
+  position absolute
+  top calc(50% - 40px)
+  left 50%
+  transform translate(-50%, -50%)
+  .title
+    color #183149
+    font-size 25px
+    font-weight 600
+    margin 0
+    letter-spacing .3px
+  .subtitle
+    color #94a0b9
+    margin 0
+    letter-spacing .3px
+    font-size 14px
+  .input-container
+    position relative
+    &.error
+      .store-input
+        border-bottom-color #f23452
+      .placeholder
+        color #f23452
+    &.active
+      .placeholder
+        bottom 35px
+        font-size 11px
+    .placeholder
+      font-size 16px
+      position absolute
+      color rgb(186, 186, 196)
+      letter-spacing .3px
+      bottom 8px
+      left 2px
+      z-index -1
+      transition font-size .2s, bottom .2s
+    .store-input
+      width 500px
+      background none
+      z-index 5
+      border none
+      border-bottom 1px solid rgb(231, 231, 241)
+      color rgb(34, 35, 48)
+      font-size 16px
+      letter-spacing .3px
+      font-weight 500
+      padding 30px 2px 8px
+      outline none
+  .action-container
+    margin 15px 0 0
+    float right
+    display flex
+    align-items center
+    justify-content right
+    .cancel-link
+      color #94a0b9
+      font-size 14px
+      margin 1px 20px 0 0
+      letter-spacing .3px
+      text-decoration none
+      transition color .3s
+      &:hover
+        color #535b6b
+    .button-container
+      background #0E9EE4
+      position relative
+      width 125px
+      height 35px
+      border-radius 3px
+      cursor pointer
+      transition background .3s
+      &:hover,
+      &.loading
+        background #118fcc
+      &.loading
+        cursor default
+        .loader
+          display block
+        .button-text
+          display none
+      .loader
+        width 25px
+        height 25px
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%)
+        display none
+      .button-text
+        color white
+        position absolute
+        top 50%
+        left 50%
+        transform translate(-50%, -50%)
+        margin 0
+        font-size 14px
+
+@media only screen and (max-width 600px)
+  .store-input
+    width 400px !important
+
+@media only screen and (max-width 475px)
+  .store-input
+    width 90vw !important

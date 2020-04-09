@@ -8,7 +8,8 @@ var bodyParser = require('body-parser')
 
 
 
-var indexRouter = require('./routes/index');
+var indexRout = require('./routes/index');
+var apiRout = require('./routes/api');
 const port = process.env.PORT || 3000
 var app = express();
 
@@ -23,7 +24,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '..', 'bin')));
 
-app.use('/', indexRouter);
+app.use('/', indexRout);
+app.use('/api', apiRout);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

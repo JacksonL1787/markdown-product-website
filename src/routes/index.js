@@ -15,4 +15,12 @@ router.get('/support', function(req, res, next) {
   res.render('support')
 });
 
+router.get('/request-store', function(req, res, next) {
+  res.render('request-store')
+});
+
+router.get('/request-success', function(req, res, next) {
+  res.render('request-success')
+});
+
 module.exports = router;
